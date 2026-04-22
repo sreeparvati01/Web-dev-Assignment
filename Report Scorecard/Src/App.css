@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f1b2a; /* simple dark blue */
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding: 25px;
+}
+
+/* Heading */
+h1 {
+  color: #e6f0ff;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Sections (cards) */
+.container > * {
+  background: #162433;
+  margin: 15px auto;
+  padding: 18px;
+  border-radius: 10px;
+  width: 70%;
+  color: #dbeafe;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Form */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Inputs */
+input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #2c3e50;
+  background-color: #1e2d3d;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Button */
+button {
+  padding: 8px 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e6f0ff;
+}
+
+th {
+  background-color: #1d4ed8;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #2c3e50;
+}
+
+/* Row hover (very subtle) */
+tr:hover {
+  background-color: #1e2d3d;
+}
+
+/* Table input */
+td input {
+  width: 65px;
+  text-align: center;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+/* Pass / Fail */
+.pass {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.fail {
+  color: #ef4444;
+  font-weight: 600;
+}
