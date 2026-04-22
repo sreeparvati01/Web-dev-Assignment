@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #0a0f2f);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 1px 1px 5px #000;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Boxes */
+.searchBox, .weatherBox, .consoleBox {
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  flex: 1 1 45%;
+  min-width: 300px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.searchBox:hover, .weatherBox:hover, .consoleBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+input[type="text"] {
+  padding: 10px 12px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1em;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 5px #ff7f50;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(45deg, #ff7f50, #ff4500);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff4500, #ff6347);
+  transform: translateY(-2px);
+}
+
+/* Search History Buttons */
+#history button {
+  margin: 5px 5px 0 0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 0.9em;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#history button:hover {
+  background: #104e8b;
+}
+
+/* Weather Box Text */
+.weatherBox #weatherResult {
+  margin-top: 15px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  min-height: 100px;
+}
+
+/* Console Box */
+.consoleBox {
+  background: #111;
+  color: #0f0;
+  flex: 1 1 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.consoleBox pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
